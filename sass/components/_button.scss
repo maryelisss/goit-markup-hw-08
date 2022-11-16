@@ -1,0 +1,23 @@
+.button {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: var(--brand-color);
+    color: var(--color-wtite);
+    cursor: pointer;
+    padding: 10px 32px;
+    border: none;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    background-color: #188ce8;
+}
+}
