@@ -22,10 +22,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     background-color: var(--color-wtite);
     padding: 40px;
+        @media (min-width: 768px) {}
+        
+        @media (min-width: 1200px) {
+            width: 528px;
+            height: 581px;
+        }
 }
 
 .modal__close-button {
@@ -64,8 +70,11 @@
     text-align: center;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
     margin-bottom: 12px;
+        @media (min-width: 1200px) {
+        line-height: 1.15;
+        }
 }

@@ -168,7 +168,13 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
                 <li class="team__item">
-                    <img src="./images/photo-igor-demjanenko.jpg" alt="Усміхнений чоловік в коричневій сорочці і окулялах" width="270">
+                    <picture class="team__photo">
+                        <source srcset="images/photo-igor-demjanenko.jpg" media="(min-width: 1200px)"  sizes="(min-width: 1200px) 270px, 100vw"/>                            
+                        <source srcset="images/photo-igor-demjanenko-mobile.jpg" media="(max-width: 768px)" sizes="(max-width: 768px) 450px, 100vw"/>                        
+                        <source srcset="images/photo-igor-demjanenko-tablet.jpg" media="(min-width: 768px)" sizes="(min-width: 768px) 354px, 100vw"/>
+
+                        <img src="./images/photo-igor-demjanenko-mobile.jpg" alt="Усміхнений чоловік в коричневій сорочці і окулялах" />
+                    </picture>
                     <div class="team__subtitle">
                     <h3 class="team__name">Ігор Дем'яненко</h3>
                     <p lang="en" class="team__position">Product Designer</p>
@@ -196,7 +202,13 @@
                         </ul>
                 </li>
                 <li class="team__item">
-                    <img src="./images/photo-olga-repina.jpg" alt="Усміхнена жінка блондинка і піджаку і окулярах" width="270">
+                        <picture class="team__photo">
+                        <source srcset="images/photo-olga-repina.jpg" media="(min-width: 1200px)"  sizes="(min-width: 1200px) 270px, 100vw"/>                            
+                        <source srcset="images/photo-olga-repina-mobile.jpg" media="(max-width: 768px)" sizes="(max-width: 768px) 450px, 100vw"/>                        
+                        <source srcset="images/photo-olga-repina-tablet.jpg" media="(min-width: 768px)" sizes="(min-width: 768px) 354px, 100vw"/>
+
+                        <img src="./images/photo-olga-repina-mobile.jpg" alt="Усміхнена жінка блондинка і піджаку і окулярах" />
+                    </picture>
                     <div class="team__subtitle">
                     <h3 class="team__name">Ольга Рєпіна</h3>
                     <p lang="en" class="team__position">Frontend Developerr</p>
@@ -225,7 +237,12 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/photo-mukola-tarasov.jpg" alt="Усміхнений чоловік в блакитній сорочці" width="270">
+                    <picture class="team__photo">
+                    <source srcset="images/photo-mukola-tarasov.jpg" media="(min-width: 1200px)"  sizes="(min-width: 1200px) 270px, 100vw"/>                            
+                    <source srcset="images/photo-mukola-tarasov-mobile.jpg" media="(max-width: 768px)" sizes="(max-width: 768px) 450px, 100vw"/>                        
+                    <source srcset="images/photo-mukola-tarasov-tablet.jpg" media="(min-width: 768px)" sizes="(min-width: 768px) 354px, 100vw"/>
+                    <img src="./images/photo-mukola-tarasov-mobile.jpg" alt="Усміхнений чоловік в блакитній сорочці" />
+                    </picture>                    
                     <div class="team__subtitle">
                     <h3 class="team__name">Микола Тарасов</h3>
                     <p lang="en" class="team__position">Marketing</p>
@@ -254,7 +271,12 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/photo-mukhailo-jermakov.jpg" alt="Усміхнений чоловік в чорній футболці і окулярах" width="270">
+                    <picture class="team__photo">
+                    <source srcset="images/photo-mukhailo-jermakov.jpg" media="(min-width: 1200px)"  sizes="(min-width: 1200px) 270px, 100vw"/>                            
+                    <source srcset="images/photo-mukhailo-jermakov-mobile.jpg" media="(max-width: 768px)" sizes="(max-width: 768px) 450px, 100vw"/>                        
+                    <source srcset="images/photo-mukhailo-jermakov-tablet.jpg" media="(min-width: 768px)" sizes="(min-width: 768px) 354px, 100vw"/>
+                    <img src="./images/photo-mukhailo-jermakov-mobile.jpg" alt="Усміхнений чоловік в чорній футболці і окулярах" />
+                    </picture>                       
                     <div class="team__subtitle">
                     <h3 class="team__name">Михайло Єрмаков</h3>
                     <p lang="en" class="team__position">UI Designer</p>
@@ -285,7 +307,7 @@
                 </ul>
             </div>
             </section>
-      <!-- <section class="clients section">
+      <section class="clients section">
             <div class="container">
                 <h2 class="clients__title">Постійні клієнти</h2>
                 <ul class="clients__list">
@@ -327,11 +349,11 @@
                     </a></li>
                 </ul>
             </div>
-        </section>      -->
+        </section>     
     </main>
-    <!-- <footer  class="footer">
+    <footer  class="footer">
             <div class="container footer--container">
-            <div>
+            <div class="footer__logo-and-adress">
                 <a href="./index.html" class="logo footer__logo">Web<span class="footer__logo--text">Studio</span></a>
             <address class="footer__auth-nav-links-list">
             <ul>
@@ -370,13 +392,13 @@
             <form class="footer-form" action="#">
                 <label class="footer-form__label" for="subscribe-input">Підпишіться на розсилку</label>
                 <div class="footer-form__mail-box">
-                <input class="footer-form__input" type="email" id="subscribe-input" placeholder="E-mail">
-                <button class="footer-form__button" type="submit">
-                <span class="footer-form__button--text">Підписатися</span>
-                <svg class="footer-form__button--icon" wigth="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-                </button>
+                    <input class="footer-form__input" type="email" id="subscribe-input" placeholder="E-mail">
+                    <button class="footer-form__button" type="submit">
+                        <span class="footer-form__button--text">Підписатися</span>
+                        <svg class="footer-form__button--icon" wigth="24" height="24">
+                        <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
                 </div>
             </form>
             </div>

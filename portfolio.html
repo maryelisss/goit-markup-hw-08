@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="./css/main.min.css" />
+        <title>Portfolio</title>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet"
+        />
 </head>
 <body>
         <header class="header">
             <div class="container header__container">
 
                 <a href="./index.html" class="logo header__logo">Web<span class="header__logo--text">Studio</span></a>
+                <button class="mobile-menu-button js-open-menu">
+            <svg class="mobile-menu-button__icon" width="24" height="16">
+                <use href="./images/icons.svg#icon-mobile-menu"></use>
+            </svg>
+            </button>
             <nav class="header__nav">
                 <ul class="site-nav">
                 <li> <a href="./index.html" class="site-nav__link">Студія</a> </li>
@@ -175,9 +185,9 @@
             </section>
         
         </main>
-        <footer  class="footer">
+    <footer  class="footer">
             <div class="container footer--container">
-            <div>
+            <div class="footer__logo-and-adress">
                 <a href="./index.html" class="logo footer__logo">Web<span class="footer__logo--text">Studio</span></a>
             <address class="footer__auth-nav-links-list">
             <ul>
@@ -216,17 +226,76 @@
             <form class="footer-form" action="#">
                 <label class="footer-form__label" for="subscribe-input">Підпишіться на розсилку</label>
                 <div class="footer-form__mail-box">
-                <input class="footer-form__input" type="email" id="subscribe-input" placeholder="E-mail">
-                <button class="footer-form__button" type="submit">
-                <span class="footer-form__button--text">Підписатися</span>
-                <svg class="footer-form__button--icon" wigth="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-                </button>
+                    <input class="footer-form__input" type="email" id="subscribe-input" placeholder="E-mail">
+                    <button class="footer-form__button" type="submit">
+                        <span class="footer-form__button--text">Підписатися</span>
+                        <svg class="footer-form__button--icon" wigth="24" height="24">
+                        <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
                 </div>
             </form>
             </div>
-            </footer>
+            </footer> -->
+        <!-- mobile-menu     -->
+    <div class="mobile-menu js-menu-container">
+      <div class="container">
+        <bottom class="mobile-menu__close-button js-close-menu">
+          <svg class="mobile-menu__close-button__icon" wigth="19" height="19">
+            <use href="./images/icons.svg#icon-mobile-menu-close"></use>
+          </svg>
+        </bottom>
+
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__site-nav">
+            <li>
+              <a
+                href="./index.html"
+                class="mobile-menu__site-nav__link"
+                >Студія</a
+              >
+            </li>
+            <li>
+              <a href="./portfolio.html" class="mobile-menu__site-nav__link mobile-menu__site-nav__link--current"
+                >Портфоліо</a
+              >
+            </li>
+            <li>
+              <a href="#" class="mobile-menu__site-nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mobile-menu__auth-nav">
+          <li>
+            <a class="mobile-menu__auth-nav__tel" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobile-menu__auth-nav__mail"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__social-links-list">
+          <li class="mobile-menu__social-links-item">
+            <a href="#" class="mobile-menu__social-link">Instagram</a>
+          </li>
+          <li class="mobile-menu__social-links-item">
+            <a href="#" class="mobile-menu__social-link">Twitter</a>
+          </li>
+          <li class="mobile-menu__social-links-item">
+            <a href="#" class="mobile-menu__social-link">Facebook</a>
+          </li>
+          <li class="mobile-menu__social-links-item">
+            <a href="#" class="mobile-menu__social-link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>        
     </body>
     </html>
 

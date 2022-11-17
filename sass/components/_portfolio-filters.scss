@@ -1,7 +1,14 @@
 .portfolio__filters__list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 50px;
+    flex-wrap: wrap;
+    row-gap: 15px;
+        @media (min-width: 768px) {
+            justify-content: center;
+        }
+        
+        @media (min-width: 1200px) {}
 }
 
 .portfolio__filters__item {
