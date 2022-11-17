@@ -1,129 +1,169 @@
-
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
-    <link rel="stylesheet" href="./css/main.min.css">
-    <title>WebStudio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="./css/main.min.css" />
+        <title>WebStudio</title>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet"
+        />
+    </head>
+    <body>
         <header class="header">
-            <div class="container header__container">
-
-                        <a href="./index.html" class="logo header__logo">Web<span class="header__logo--text">Studio</span></a>
-                        <button class="mobile-menu-button js-open-menu">
-                            <svg class="mobile-menu-button__icon" width="24" height="16">
-                            <use href="./images/icons.svg#icon-mobile-menu"></use>
-                            </svg>                
-                        </button>
-                <nav class="header__nav">                 
-                        <ul class="site-nav">
-                        <li> <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a> </li>
-                        <li> <a href="./portfolio.html" class="site-nav__link">Портфоліо</a> </li>
-                        <li> <a href="#" class="site-nav__link">Контакти</a> </li>
-                        </ul>
-                </nav>
-                <ul class="auth-nav">
-                <li> 
-                    <a class="auth-nav__link" href="mailto:info@devstudio.com" >
-                        <svg class="auth-nav__icon" width="16" height="12">
-                        <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>
-                    info@devstudio.com</a>
+        <div class="container header__container">
+            <a href="./index.html" class="logo header__logo"
+            >Web<span class="header__logo--text">Studio</span></a
+            >
+            <button class="mobile-menu-button js-open-menu">
+            <svg class="mobile-menu-button__icon" width="24" height="16">
+                <use href="./images/icons.svg#icon-mobile-menu"></use>
+            </svg>
+            </button>
+            <nav class="header__nav">
+            <ul class="site-nav">
+                <li>
+                <a
+                    href="./index.html"
+                    class="site-nav__link site-nav__link--current"
+                    >Студія</a
+                >
                 </li>
                 <li>
-                    <a class="auth-nav__link" href="tel:+380961111111" >
-                        <svg class="auth-nav__icon" width="16" height="12">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
+                <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
                 </li>
-                </ul>
-                </div>
-    </header>
-        <main>
-            <section class="hero section">
+                <li><a href="#" class="site-nav__link">Контакти</a></li>
+            </ul>
+            </nav>
+            <ul class="auth-nav">
+            <li>
+                <a class="auth-nav__link" href="mailto:info@devstudio.com">
+                <svg class="auth-nav__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+                >
+            </li>
+            <li>
+                <a class="auth-nav__link" href="tel:+380961111111">
+                <svg class="auth-nav__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+                >
+            </li>
+            </ul>
+        </div>
+        </header>
+    <main>
+        <section class="hero section">
             <div class="container">
-                <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="hero__button button" data-modal-open> Замовити послугу </button>
+            <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+            <button type="button" class="hero__button button" data-modal-open>
+                Замовити послугу
+            </button>
             </div>
-            </section>
-            <section class="features section">
-                <div class="container">
-                <h2 class="features__title visually-hidden">Особливості компанії</h2>
-                <ul class="features__list">
+        </section>
+        <section class="features section">
+            <div class="container">
+            <h2 class="features__title visually-hidden">Особливості компанії</h2>
+            <ul class="features__list">
                 <li class="features__item">
-                    <div class="feauters__img">
+                <div class="feauters__img">
                     <svg width="70" height="70">
-                        <use href="./images/icons.svg#icon-antenna"></use>
+                    <use href="./images/icons.svg#icon-antenna"></use>
                     </svg>
-                    </div>
-                    <h3 class="features__subtitle">Увага до деталей</h3>
-                    <p class="features__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-                </li>
-                <li class="features__item">
-                    <div class="feauters__img">
-                        <svg width="70" height="70">
-                            <use href="./images/icons.svg#icon-clock"></use>
-                        </svg>
-                    </div>
-                    <h3 class="features__subtitle">Пунктуальність</h3>
-                    <p class="features__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                </li>
-                <li class="features__item">
-                    <div class="feauters__img">
-                        <svg width="70" height="70">
-                            <use href="./images/icons.svg#icon-diagram"></use>
-                        </svg>
-                    </div>
-                    <h3 class="features__subtitle">Планування</h3>
-                    <p class="features__text">Так само консультація з широким активом значною мірою зумовлює.</p>
-                </li>
-                <li class="features__item">
-                    <div class="feauters__img">
-                        <svg width="70" height="70">
-                            <use href="./images/icons.svg#icon-astronaut"></use>
-                        </svg>
-                    </div>
-                    <h3 class="features__subtitle">Сучасні технології</h3>
-                <p class="features__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-                </li>
-                </ul>
                 </div>
-            </section>
-            <section class="working section">
-                <div class="container">
-                <h2 class="working__title">Чим ми займаємося</h2>
-                <ul class="working__list">
+                <h3 class="features__subtitle">Увага до деталей</h3>
+                <p class="features__text">
+                    Ідейні міркування, і навіть початок повсякденної роботи з
+                    формування позиції.
+                </p>
+                </li>
+                <li class="features__item">
+                <div class="feauters__img">
+                    <svg width="70" height="70">
+                    <use href="./images/icons.svg#icon-clock"></use>
+                    </svg>
+                </div>
+                <h3 class="features__subtitle">Пунктуальність</h3>
+                <p class="features__text">
+                    Завдання організації, особливо рамки і місце навчання кадрів
+                    тягне у себе.
+                </p>
+                </li>
+                <li class="features__item">
+                <div class="feauters__img">
+                    <svg width="70" height="70">
+                    <use href="./images/icons.svg#icon-diagram"></use>
+                    </svg>
+                </div>
+                <h3 class="features__subtitle">Планування</h3>
+                <p class="features__text">
+                    Так само консультація з широким активом значною мірою зумовлює.
+                </p>
+                </li>
+                <li class="features__item">
+                <div class="feauters__img">
+                    <svg width="70" height="70">
+                    <use href="./images/icons.svg#icon-astronaut"></use>
+                    </svg>
+                </div>
+                <h3 class="features__subtitle">Сучасні технології</h3>
+                <p class="features__text">
+                    Значимість цих проблем настільки очевидна, що реалізація
+                    планових завдань.
+                </p>
+                </li>
+            </ul>
+            </div>
+        </section>
+        <section class="working section">
+            <div class="container">
+            <h2 class="working__title">Чим ми займаємося</h2>
+            <ul class="working__list">
                 <li class="working__item">
-                <img src="./images/pic1.jpg" alt="Програміст пише код" width="370">
+                <img
+                    src="./images/pic1.jpg"
+                    alt="Програміст пише код"
+                    width="370"
+                />
                 <div class="working__subtatle">
                     <p>Десктопні додатки</p>
                 </div>
                 </li>
                 <li class="working__item">
-                <img src="./images/pic2.jpg" alt="Дизайнер робить макет додатка для телефона" width="370">
+                <img
+                    src="./images/pic2.jpg"
+                    alt="Дизайнер робить макет додатка для телефона"
+                    width="370"
+                />
                 <div class="working__subtatle">
                     <p>Мобільні додатки</p>
                 </div>
                 </li>
                 <li class="working__item">
-                <img src="./images/pic3.jpg" alt="Палітра кольорів на екрані планшета" width="370">
+                <img
+                    src="./images/pic3.jpg"
+                    alt="Палітра кольорів на екрані планшета"
+                    width="370"
+                />
                 <div class="working__subtatle">
                     <p>Дизайнерські рішення</p>
                 </div>
                 </li>
-                </ul>
-                </div>
-            </section>
-            <section class="team section">
+            </ul>
+            </div>
+        </section>
+        <section class="team section">
             <div class="container">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
@@ -226,7 +266,7 @@
                             </a></li>
                         <li><a class="team__social-link" href="#">
                                 <svg class="team__social-link__icon" width="20" height="20">
-                                    <use href="./images/icons.  svg#icon-twitter"></use>
+                                    <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a></li>
                         <li><a class="team__social-link" href="#">
@@ -245,7 +285,7 @@
                 </ul>
             </div>
             </section>
-        <section class="clients section">
+      <!-- <section class="clients section">
             <div class="container">
                 <h2 class="clients__title">Постійні клієнти</h2>
                 <ul class="clients__list">
@@ -287,9 +327,9 @@
                     </a></li>
                 </ul>
             </div>
-        </section>     
-        </main>
-        <footer  class="footer">
+        </section>      -->
+    </main>
+    <!-- <footer  class="footer">
             <div class="container footer--container">
             <div>
                 <a href="./index.html" class="logo footer__logo">Web<span class="footer__logo--text">Studio</span></a>
@@ -340,83 +380,143 @@
                 </div>
             </form>
             </div>
-            </footer>
-<!-- mobile-menu     -->
+            </footer> -->
+    <!-- mobile-menu     -->
     <div class="mobile-menu js-menu-container">
-        <div class="container">
-            <bottom class="mobile-menu__close-button js-close-menu">
-                <svg class="mobile-menu__close-button__icon" wigth="19" height="19">
-                <use href="./images/icons.svg#icon-mobile-menu-close"></use>
-                </svg>
-            </bottom>
-        
-            <nav class="mobile-menu__nav">
-                <ul class="mobile-menu__site-nav">
-                    <li><a href="./index.html" class="mobile-menu__site-nav__link mobile-menu__site-nav__link--current">Студія</a></li>
-                    <li><a href="./portfolio.html" class="mobile-menu__site-nav__link ">Портфоліо</a></li>
-                    <li><a href="#" class="mobile-menu__site-nav__link">Контакти</a> </li>
-                </ul>
-            </nav>
-            <ul class="mobile-menu__auth-nav">
-                <li><a class="mobile-menu__auth-nav__tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                <li><a class="mobile-menu__auth-nav__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            </ul>
-            <ul class="mobile-menu__social-links-list">
-                <li class="mobile-menu__social-links-item"><a href="#" class="mobile-menu__social-link">Instagram</a></li>
-                <li class="mobile-menu__social-links-item"><a href="#" class="mobile-menu__social-link">Twitter</a></li>
-                <li class="mobile-menu__social-links-item"><a href="#" class="mobile-menu__social-link">Facebook</a></li>
-                <li class="mobile-menu__social-links-item"><a href="#" class="mobile-menu__social-link">LinkedIn</a></li>
-            </ul>
-        </div>
+      <div class="container">
+        <bottom class="mobile-menu__close-button js-close-menu">
+          <svg class="mobile-menu__close-button__icon" wigth="19" height="19">
+            <use href="./images/icons.svg#icon-mobile-menu-close"></use>
+          </svg>
+        </bottom>
+
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__site-nav">
+            <li>
+              <a
+                href="./index.html"
+                class="mobile-menu__site-nav__link mobile-menu__site-nav__link--current"
+                >Студія</a
+              >
+            </li>
+            <li>
+              <a href="./portfolio.html" class="mobile-menu__site-nav__link"
+                >Портфоліо</a
+              >
+            </li>
+            <li>
+              <a href="#" class="mobile-menu__site-nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mobile-menu__auth-nav">
+          <li>
+            <a class="mobile-menu__auth-nav__tel" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobile-menu__auth-nav__mail"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__social-links-list">
+          <li class="mobile-menu__social-links-item">
+            <a href="#" class="mobile-menu__social-link">Instagram</a>
+          </li>
+          <li class="mobile-menu__social-links-item">
+            <a href="#" class="mobile-menu__social-link">Twitter</a>
+          </li>
+          <li class="mobile-menu__social-links-item">
+            <a href="#" class="mobile-menu__social-link">Facebook</a>
+          </li>
+          <li class="mobile-menu__social-links-item">
+            <a href="#" class="mobile-menu__social-link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
-<!-- modal -->
-<div class="backdrop is-hidden" data-modal>
-<div class="modal">
-    <button type="button" class="modal__close-button" data-modal-close>
-            <svg class="modal__close-icon" wigth="11" height="11">
+    <!-- modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close-button" data-modal-close>
+          <svg class="modal__close-icon" wigth="11" height="11">
             <use href="./images/icons.svg#modal-close"></use>
-        </svg>
-    </button>
-    <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>  
-    <form action="#">
-        <label class="form__lable" for="person-name">Ім'я</label>
-        <div class="form__control">
-        <input class="form__input" id="person-name" type="text" name="person-name">
-        <svg class="form__input__icon" wigth="18" height="18">
-            <use href="./images/icons.svg#icon-person"></use>
-        </svg>
-        </div>
-        <label class="form__lable" for="person-phone">Телефон</label>
-        <div class="form__control">
-        <input class="form__input" id="person-phone" type="tel" name="person-phone">
-        <svg class="form__input__icon" wigth="18" height="18">
-            <use href="./images/icons.svg#icon-phone"></use>
-        </svg>
-        </div>
-        <label class="form__lable" for="person-email">Пошта</label>
-        <div class="form__control">
-        <input class="form__input" id="person-email" type="email" name="person-email">
-        <svg class="form__input__icon" wigth="18" height="18">
-            <use href="./images/icons.svg#icon-mail"></use>
-        </svg>
-        </div>   
-        <label class="form__lable" for="person-comment">Коментар</label>
-        <textarea class="form__comment" 
-        id="person-comment" name="person-comment" placeholder="Введіть текст"></textarea>
-        <div class="form__terms__box" >        
-        <input class="form__checkbox__input visually-hidden" id="terms-checkbox" type="checkbox" name="terms-checkbox">
-        <label class="form__checkbox__label" for="terms-checkbox">Погоджуюся з розсилкою та приймаю <a class="form__checkbox__terms-link" href="#">Умови договору</a></label>  
-        <svg class="form__checkbox__label__icon" wigth="16" height="15">
-            <use href="./images/icons.svg#icon-checkbox-checked"></use>
-        </svg>    
-        </div> 
-        <button type="submit" class="form__submit-button button"> Відправити </button>
-    </form>
-        </div>
-    </div>    
+          </svg>
+        </button>
+        <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form action="#">
+          <label class="form__lable" for="person-name">Ім'я</label>
+          <div class="form__control">
+            <input
+              class="form__input"
+              id="person-name"
+              type="text"
+              name="person-name"
+            />
+            <svg class="form__input__icon" wigth="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label class="form__lable" for="person-phone">Телефон</label>
+          <div class="form__control">
+            <input
+              class="form__input"
+              id="person-phone"
+              type="tel"
+              name="person-phone"
+            />
+            <svg class="form__input__icon" wigth="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label class="form__lable" for="person-email">Пошта</label>
+          <div class="form__control">
+            <input
+              class="form__input"
+              id="person-email"
+              type="email"
+              name="person-email"
+            />
+            <svg class="form__input__icon" wigth="18" height="18">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+          </div>
+          <label class="form__lable" for="person-comment">Коментар</label>
+          <textarea
+            class="form__comment"
+            id="person-comment"
+            name="person-comment"
+            placeholder="Введіть текст"
+          ></textarea>
+          <div class="form__terms__box">
+            <input
+              class="form__checkbox__input visually-hidden"
+              id="terms-checkbox"
+              type="checkbox"
+              name="terms-checkbox"
+            />
+            <label class="form__checkbox__label" for="terms-checkbox"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="form__checkbox__terms-link" href="#"
+                >Умови договору</a
+              ></label
+            >
+            <svg class="form__checkbox__label__icon" wigth="16" height="15">
+              <use href="./images/icons.svg#icon-checkbox-checked"></use>
+            </svg>
+          </div>
+          <button type="submit" class="form__submit-button button">
+            Відправити
+          </button>
+        </form>
+      </div>
+    </div>
 
-        <script src="./js/modal.js"></script>
-        <script src="./js/mobile-menu.js"></script>
-    </body>
-    </html>
-
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
