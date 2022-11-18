@@ -128,8 +128,8 @@ flex-direction: row;
     align-items: center;
     padding: 5px 0;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
     
@@ -138,6 +138,8 @@ flex-direction: row;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @media (min-width: 1200px) {
         padding: 32px 0;
+        font-size: 14px;
+        line-height: 1.14;
     }
 
 

@@ -24,6 +24,9 @@
 }
 .footer__logo-and-adress{
     margin-bottom: 60px;
+    @media (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 .footer__logo {
     display: block;
@@ -97,7 +100,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start; 
-
+            margin-bottom: 0;
             margin-left: 70px;
         }
 }
